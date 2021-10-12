@@ -1,0 +1,30 @@
+.theme {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    right: 0;
+    height: 500px;
+    z-index: -1;
+}
+
+.content {
+   width: 800px;
+   margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        width: 100%;
+        padding: var(--space-3)
+    }
+
+    .theme {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .theme {
+        height: 300px;
+    }
+}

@@ -1,0 +1,87 @@
+@import '../../../assets/stylesheet/mixin';
+
+.card {
+    display: flex;
+    flex-direction: row;
+    padding: px2rem(24px) 0;
+    cursor: pointer;
+
+    .card-pic {
+        flex: 1;
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: cover;
+        background-color: #3B3F47;
+        height: px2rem(250px);
+
+        &:hover,
+        &:focus {
+            transform: translateY(-5px);
+            transition: transform .6s;
+        }
+    }
+
+    .gap {
+        width: px2rem(20px);
+        height: px2rem(20px);
+    }
+
+    .card-content {
+        flex: 1;
+        vertical-align: top;
+        text-align: left;
+
+        .title {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            margin: px2rem(16px) 0;
+
+            &:hover,
+            &:focus {
+                color: var(--gray-light);
+                transition: color .3;
+            }
+        }
+
+        .time {
+            color: var(--gray-light);
+            font-size: px2rem(12px);
+
+            .icon-pen {
+                fill: currentColor;
+                width: px2rem(12px);
+                height: px2rem(12px);
+            }
+        }
+
+        .digest {
+            font-size: px2rem(12px);
+            line-height: 1.5rem;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        transform: translateY(-5px);
+        transition: transform .6s;
+    }
+}
+
+[data-direction='right'].card {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1000px) {
+    .card-pic {
+        height: px2rem(200px);
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .card {
+        flex-direction: column !important;
+        .card, .card-pic {
+            flex: auto;
+        }
+    }
+}

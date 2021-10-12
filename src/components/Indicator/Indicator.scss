@@ -1,0 +1,21 @@
+.indicator {
+    position: absolute;
+    z-index: 1;
+    top: 0;right: 0;left: 0;bottom: 0;
+    background: linear-gradient(to right top,var(--black) 50%, transparent 50%) no-repeat;
+    background-size: 100% calc(100% - 100vh);
+    pointer-events: none;
+    mix-blend-mode: darken;
+}
+
+
+.indicator::after {
+    content: '';
+    position: fixed;
+    z-index: 1;
+    top: 5px;bottom: 0;right: 0;left: 0;
+    background: white;
+}
+
+    // TODO:这里不能用after元素，我也还不知道为啥？但是用了会导致bug会导致fixed不能覆盖完全
+    // TODO:弄清楚这里的z-index为什么是1？噢噢因为用的是背景，会藏在内容后面

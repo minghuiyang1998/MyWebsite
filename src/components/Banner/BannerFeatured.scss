@@ -1,0 +1,53 @@
+@import '../../assets/stylesheet/mixin';
+
+.banner-featured {
+    color: var(--gray);
+
+    .reading-time {
+        color: var(--gray-light);
+        display: flex;
+        align-items: center;
+        font-size: px2rem(10px);
+        margin-top: px2rem(8px);
+        padding-left: px2rem(4px);
+
+        svg {
+            width: px2rem(18px);
+            height: px2rem(18px);
+            margin-right: px2rem(4px);
+            margin-left: px2rem(16px);
+            fill: currentColor;
+        }
+    }
+
+    .banner-title {
+        font-size: px2rem(20px);
+        font-weight: 600;
+        margin: px2rem(12px) 0 px2rem(30px);
+    }
+
+    .image-wrap {
+        position: relative;
+        background-color: var(--white);
+        padding: px2rem(10px);
+        margin: px2rem(30px) 0;
+        height: px2rem(300px);
+        box-shadow: 0 3px 12px rgba(27, 31, 35, .15);
+
+
+        .banner-image {
+            display: block;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .banner-featured .image-wrap {
+        margin: 0;
+        padding: 0;
+    }
+}

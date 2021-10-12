@@ -1,0 +1,8 @@
+@import '../../../assets/stylesheet/mixin';
+
+.footer {
+    padding: var(--space-3) 0 var(--space-2);
+    font-size: px2rem(8px);
+    color: var(--gray-light);
+    text-align: center;
+}

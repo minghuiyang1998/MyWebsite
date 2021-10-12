@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{143:function(e,n,t){"use strict";t.r(n);var a=t(7),r=t.n(a),o=t(0),p=t.n(o),c=t(153),i=t(165),u=t(164),l=function(e){function n(){return e.apply(this,arguments)||this}return r()(n,e),n.prototype.render=function(){return p.a.createElement(c.a,null,p.a.createElement(u.a,{info:{searchKey:"Develop",text:"Main in frontend development"}}),p.a.createElement(i.a,{searchKey:"develop"}))},n}(p.a.Component);n.default=l}}]);
+//# sourceMappingURL=component---src-pages-develop-jsx-479a37308f46e1e9720b.js.map

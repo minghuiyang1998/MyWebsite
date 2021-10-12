@@ -1,0 +1,57 @@
+
+/*================
+     公共方法
+=================*/
+
+//  .clearfloat:after {
+//    display: block;
+//    clear: both;
+//    content: "";
+//    visibility: hidden;
+//    height: 0
+//  }
+
+//  .clearfloat {
+//    zoom: 1
+//  }
+
+ @function px2rem($px, $base-font-size: 16px) {
+   @if (unitless($px)) {
+     @return px2rem($px + 0px);
+   } @else if (unit($px) == rem) {
+     @return $px;
+   }
+   @return ($px / $base-font-size) * 1rem;
+ }
+
+ @mixin font-dpr($font-size) {
+   font-size: $font-size;
+   [data-dpr="2"] & {
+     font-size: $font-size * 2;
+   }
+   [data-dpr="3"] & {
+     font-size: $font-size * 3;
+   }
+ }
+
+ @mixin img-100($w ,$h ,$imgUrl){
+   width: px2rem($w);
+   height: px2rem($h);
+   background: url($imgUrl) no-repeat center;
+   background-size: 100%;
+ }
+
+//  .pos_relative{
+//    position: relative;
+//    top:0;
+//    left: 0;
+//  }
+
+//  .pos_cen_abs{
+//    position: absolute;
+//    top:0;
+//    left: 0;
+//    right: 0;
+//    bottom: 0;
+//    margin: auto;
+//  }

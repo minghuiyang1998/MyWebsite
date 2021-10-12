@@ -1,0 +1,36 @@
+@import '../../assets/stylesheet/mixin';
+
+.banner-result {
+    margin: px2rem(30px) px2rem(60px) 0;
+
+    h1 {
+        margin: 0;
+        font-size: px2rem(36px);
+        line-height: 1.2;
+        font-weight: 600;
+        margin-bottom: px2rem(16px);
+    }
+
+    h2 {
+        margin: 0;
+        font-weight: 400;
+        font-size: .8rem;
+        margin-bottom: px2rem(8px);
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    .banner-result {
+        margin-left: px2rem(45px);
+        margin-right: px2rem(45px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .banner-result {
+        margin-left: px2rem(30px);
+        margin-right: px2rem(30px);
+    }
+}

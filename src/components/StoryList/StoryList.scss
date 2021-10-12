@@ -1,0 +1,10 @@
+@import '../../assets/stylesheet/mixin';
+
+.story-list {
+    display: flex;
+    flex-direction: column;
+
+    .item {
+        margin: px2rem(8px);
+    }
+}

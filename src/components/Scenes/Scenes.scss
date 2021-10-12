@@ -1,0 +1,225 @@
+@import '../../assets/stylesheet/mixin';
+
+.fill {
+    object-fit: fill;
+}
+
+.contain {
+    object-fit: contain;
+}
+
+.cover {
+    object-fit: cover;
+}
+
+.scene {
+    position: relative;
+    min-height: 100vh;
+    padding: 0 var(--space-4);
+
+    .scene-header {
+        height: 100vh;
+        padding: 100px 0;
+        position: relative;
+        box-sizing: border-box;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-clip: content-box;
+
+        .title-wrap {
+            position: absolute;
+            top: 50%;
+            right: 200px;
+            transform: translateY(-50%);
+
+            .title {
+                display: inline-block;
+                margin: 0;
+                font-size: 48px;
+                color: #ffffff;
+                font-weight: 800;
+                padding: 20px 40px 20px 10px;
+                border: 8px solid #ffffff;
+            }
+        }
+    }
+
+    .photos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .photo-wrapper {
+            padding: 40px;
+
+        }
+
+        .square-text {
+            position: relative;
+            padding: 30px;
+
+            .square-anim {
+                color: #000;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+
+                --duration: 0.3s;
+                --delay: 0.3s;
+
+                .top-line {
+                    transition-property: all;
+                    transition-timing-function: ease-in;
+                    transition-duration: var(--duration);
+                    transition-delay: 0s;
+
+                    position: absolute;
+                    height: 3px;
+                    background-color: #000;
+                    width: 0%;
+                    top: 0;
+                    left: 0;
+                }
+
+                .right-line {
+                    transition-property: all;
+                    transition-timing-function: ease-in;
+                    transition-duration: var(--duration);
+                    transition-delay: var(--delay);
+
+                    position: absolute;
+                    width: 3px;
+                    background-color: #000;
+                    height: 0%;
+                    top: 0;
+                    right: 0;
+                }
+
+                .bot-line {
+                    transition-property: all;
+                    transition-timing-function: ease-in;
+                    transition-duration: var(--duration);
+                    transition-delay: calc(var(--delay) * 2);
+
+                    position: absolute;
+                    height: 3px;
+                    background-color: #000;
+                    width: 0%;
+                    bottom: 0;
+                    right: 0;
+                }
+
+
+                .left-line {
+                    transition-property: all;
+                    transition-timing-function: ease-in;
+                    transition-duration: var(--duration);
+                    transition-delay: calc(var(--duration) * 3);
+
+                    position: absolute;
+                    width: 3px;
+                    background-color: #000;
+                    height: 0%;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                .top-line {
+                    top: 0;
+                }
+
+                .bot-line {
+                    bottom: 0;
+                }
+
+                .left-line {
+                    left: 0;
+                }
+
+                .right-line {
+                    right: 0;
+                }
+            }
+        }
+
+    }
+}
+
+
+#travel-scene {
+    #img-1 {
+        width: px2rem(300px);
+    }
+
+    #img-2 {
+        width: px2rem(250px);
+    }
+
+    #img-3 {
+        width: px2rem(350px);
+    }
+
+    .square-anim[visible='Travel'] .top-line,
+    .square-anim[visible='Travel'] .bot-line {
+        width: 100%;
+    }
+
+    .square-anim[visible='Travel'] .left-line,
+    .square-anim[visible='Travel'] .right-line {
+        height: 100%;
+    }
+
+}
+
+#develop-scene {
+    #img-1 {
+        width: px2rem(300px);
+    }
+
+    #img-2 {
+        width: px2rem(250px);
+    }
+
+    #img-3 {
+        width: px2rem(350px);
+    }
+
+    .square-anim[visible='Develop'] .top-line,
+    .square-anim[visible='Develop'] .bot-line {
+        width: 100%;
+    }
+
+    .square-anim[visible='Develop'] .left-line,
+    .square-anim[visible='Develop'] .right-line {
+        height: 100%;
+    }
+}
+
+#daily-scene {
+    #img-1 {
+        width: px2rem(300px);
+    }
+
+    #img-2 {
+        width: px2rem(250px);
+    }
+
+    #img-3 {
+        width: px2rem(350px);
+    }
+
+    .square-anim[visible='Daily'] .top-line,
+    .square-anim[visible='Daily'] .bot-line {
+        width: 100%;
+    }
+
+    .square-anim[visible='Daily'] .left-line,
+    .square-anim[visible='Daily'] .right-line {
+        height: 100%;
+    }
+}

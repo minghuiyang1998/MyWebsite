@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{145:function(e,n,t){"use strict";t.r(n);var a=t(7),r=t.n(a),o=t(0),c=t.n(o),i=t(153),p=t(165),u=t(164),l=function(e){function n(){return e.apply(this,arguments)||this}return r()(n,e),n.prototype.render=function(){return c.a.createElement(i.a,null,c.a.createElement(u.a,{info:{searchKey:"Develop",text:"Main in frontend development"}}),c.a.createElement(p.a,{searchKey:"travel"}))},n}(c.a.Component);n.default=l}}]);
+//# sourceMappingURL=component---src-pages-travel-jsx-a06519d616d61bd80cce.js.map
