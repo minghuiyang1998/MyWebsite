@@ -1,4 +1,4 @@
-access link: http://www.minghiyang1998.com
+access link: http://www.minghuiyang1998.com
 
 #develop
 
